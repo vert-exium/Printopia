@@ -1,0 +1,343 @@
+[gd_scene format=3 uid="uid://wyra6d2pdaap"]
+
+[ext_resource type="Script" uid="uid://d2qibwjhfwxqi" path="res://scripts/main_scene.gd" id="1_c16ls"]
+[ext_resource type="Texture2D" uid="uid://c1x1mhfwa0caj" path="res://assets/animations/printer (1).png" id="2_c16ls"]
+[ext_resource type="FontFile" uid="uid://bhmb5cjxjw6su" path="res://fonts/Elms_Sans/static/ElmsSans-Regular.ttf" id="2_rt2n2"]
+[ext_resource type="Texture2D" uid="uid://bjd0qqra6u2pr" path="res://assets/printButton/1.png" id="3_c16ls"]
+[ext_resource type="Texture2D" uid="uid://boexodx45xjo5" path="res://assets/printButton/2.png" id="4_18nlu"]
+[ext_resource type="Texture2D" uid="uid://dt5lwbxdv6qgu" path="res://assets/printButton/3.png" id="5_c1pb6"]
+[ext_resource type="Texture2D" uid="uid://8gq3l4yrmn8" path="res://assets/printButton/4.png" id="6_6wevv"]
+[ext_resource type="FontFile" uid="uid://btex254igaln0" path="res://fonts/Elms_Sans/static/ElmsSans-ExtraLight.ttf" id="8_18nlu"]
+[ext_resource type="Script" uid="uid://bxic8oenq5t1r" path="res://scenes/shop_menu.gd" id="8_c1pb6"]
+
+[sub_resource type="Gradient" id="Gradient_und3l"]
+offsets = PackedFloat32Array(0.018072288, 0.79518074)
+colors = PackedColorArray(0.79467297, 0.3233102, 1.92523e-07, 1, 0.85, 0.68000007, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_d8fr4"]
+gradient = SubResource("Gradient_und3l")
+width = 256
+height = 256
+fill_to = Vector2(0.8347826, 0.8043478)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_18nlu"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(0, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1pb6"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(768, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6wevv"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(1536, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e1cbu"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(2304, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mngbo"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(3072, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4w45t"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(3840, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r6p65"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(4608, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_si52b"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(5376, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01n6w"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(6144, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6u1mn"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(6912, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bcnxi"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(7680, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7nt27"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(8448, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k6f3i"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(9216, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xdqt8"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(9984, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_adb74"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(10752, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58gk3"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(11520, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_to7gp"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(12288, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u0fll"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(13056, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6p3nn"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(13824, 0, 768, 768)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k67gn"]
+atlas = ExtResource("2_c16ls")
+region = Rect2(14592, 0, 768, 768)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ivn8x"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_18nlu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c1pb6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6wevv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e1cbu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mngbo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4w45t")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r6p65")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_si52b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01n6w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6u1mn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bcnxi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7nt27")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k6f3i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xdqt8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_adb74")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_58gk3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_to7gp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u0fll")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6p3nn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k67gn")
+}],
+"loop": 0,
+"name": &"print",
+"speed": 20.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_c1pb6"]
+colors = PackedColorArray(0, 0, 0, 0.39215687, 0.23753911, 0.23753914, 0.23753911, 0.3137255)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ivn8x"]
+gradient = SubResource("Gradient_c1pb6")
+width = 256
+height = 256
+fill_to = Vector2(0, 1)
+
+[node name="mainScene" type="Node2D" unique_id=1889083805]
+script = ExtResource("1_c16ls")
+
+[node name="back" type="TextureRect" parent="." unique_id=2141977599]
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = SubResource("GradientTexture2D_d8fr4")
+
+[node name="printerSprite" type="AnimatedSprite2D" parent="." unique_id=1154650472]
+position = Vector2(392, 424)
+sprite_frames = SubResource("SpriteFrames_ivn8x")
+animation = &"print"
+frame = 4
+frame_progress = 0.15368347
+
+[node name="moneyLabel" type="Label" parent="." unique_id=2120842086]
+offset_left = 1368.0
+offset_top = 72.0
+offset_right = 1776.0
+offset_bottom = 166.0
+theme_override_fonts/font = ExtResource("2_rt2n2")
+theme_override_font_sizes/font_size = 72
+text = "Balance: $0"
+
+[node name="printButton" type="TextureButton" parent="." unique_id=628377138]
+offset_left = 207.99998
+offset_top = 830.0
+offset_right = 2208.0
+offset_bottom = 1630.0
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("3_c16ls")
+texture_pressed = ExtResource("4_18nlu")
+texture_hover = ExtResource("5_c1pb6")
+texture_disabled = ExtResource("6_6wevv")
+
+[node name="printProgressBar" type="ProgressBar" parent="." unique_id=1347779831]
+offset_left = 256.0
+offset_top = 976.0
+offset_right = 576.0
+offset_bottom = 1003.0
+step = 1.0
+
+[node name="cooldownTimer" type="Timer" parent="." unique_id=772178530]
+one_shot = true
+
+[node name="resetButton" type="Button" parent="." unique_id=57152533]
+offset_left = 1584.0
+offset_top = 960.0
+offset_right = 1856.0
+offset_bottom = 1024.0
+text = "Reset ALL Progress"
+
+[node name="shopMenu" type="Control" parent="." unique_id=369247317]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 832.0
+offset_top = 64.0
+offset_right = 832.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("8_c1pb6")
+
+[node name="backTexture" type="TextureRect" parent="shopMenu" unique_id=612739403]
+layout_mode = 0
+offset_right = 512.0
+offset_bottom = 960.0
+texture = SubResource("GradientTexture2D_ivn8x")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="shopMenu/backTexture" unique_id=1777355266]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 64.0
+offset_right = 496.0
+offset_bottom = 960.0
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="shopMenu/backTexture/ScrollContainer" unique_id=301110372]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
+
+[node name="earningsUpgrade" type="HBoxContainer" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer" unique_id=2084964722]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="upgradeName" type="Label" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/earningsUpgrade" unique_id=1928841338]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Earnings: "
+
+[node name="currentLevel" type="Label" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/earningsUpgrade" unique_id=2022679273]
+layout_mode = 2
+text = "Current: $1"
+
+[node name="UpgradeButton" type="Button" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/earningsUpgrade" unique_id=1637610259]
+layout_mode = 2
+text = "Upgrade ($1)"
+
+[node name="speedUpgrade" type="HBoxContainer" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer" unique_id=710018366]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="upgradeName" type="Label" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/speedUpgrade" unique_id=1362589298]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Print Speed:"
+
+[node name="currentLevel" type="Label" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/speedUpgrade" unique_id=1471553197]
+layout_mode = 2
+text = "Current: 1 Second(s)"
+
+[node name="UpgradeButton" type="Button" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/speedUpgrade" unique_id=984843550]
+layout_mode = 2
+text = "Upgrade ($1)"
+
+[node name="autoPrintUpgrade" type="HBoxContainer" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer" unique_id=1087254866]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="upgradeName" type="Label" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/autoPrintUpgrade" unique_id=1403830496]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Auto Print:"
+
+[node name="currentLevel" type="Label" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/autoPrintUpgrade" unique_id=824759066]
+layout_mode = 2
+text = "Current: None"
+
+[node name="UpgradeButton" type="Button" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/autoPrintUpgrade" unique_id=738517588]
+layout_mode = 2
+text = "Upgrade ($10000)"
+
+[node name="shopLabelPanel" type="Panel" parent="shopMenu" unique_id=724531830]
+layout_mode = 0
+offset_left = 96.0
+offset_top = 8.0
+offset_right = 416.0
+offset_bottom = 48.0
+
+[node name="shopLabel" type="Label" parent="shopMenu/shopLabelPanel" unique_id=1546927144]
+layout_mode = 0
+offset_left = 64.0
+offset_top = -4.0
+offset_right = 256.0
+offset_bottom = 38.0
+theme_override_fonts/font = ExtResource("8_18nlu")
+theme_override_font_sizes/font_size = 32
+text = "Shop"
+horizontal_alignment = 1
+
+[node name="audioPlayer" type="AudioStreamPlayer" parent="." unique_id=751943648]
+
+[connection signal="pressed" from="printButton" to="." method="_on_print_button_pressed"]
+[connection signal="timeout" from="cooldownTimer" to="." method="_on_cooldown_timer_timeout"]
+[connection signal="pressed" from="resetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="shopMenu/backTexture/ScrollContainer/VBoxContainer/earningsUpgrade/UpgradeButton" to="shopMenu" method="_on_upgrade_button_pressed"]
+[connection signal="pressed" from="shopMenu/backTexture/ScrollContainer/VBoxContainer/speedUpgrade/UpgradeButton" to="shopMenu" method="_on_upgrade_button2pressed"]
+[connection signal="pressed" from="shopMenu/backTexture/ScrollContainer/VBoxContainer/autoPrintUpgrade/UpgradeButton" to="shopMenu" method="_on_upgrade_button3_pressed"]

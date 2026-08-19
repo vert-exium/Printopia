@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cgtmn7awfvegf"]
+
+[ext_resource type="Script" uid="uid://cfblv7rq0vf4f" path="res://scripts/main_menu.gd" id="1_8ln24"]
+[ext_resource type="Texture2D" uid="uid://oge75rdyhle8" path="res://assets/logo/logo.png" id="1_wu84c"]
+[ext_resource type="Texture2D" uid="uid://v56vojuc54sg" path="res://assets/enterButton/1.png" id="2_8ln24"]
+[ext_resource type="Texture2D" uid="uid://de3idrfefnxp3" path="res://assets/enterButton/3.png" id="3_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://cghsudhyb5uuj" path="res://assets/enterButton/2.png" id="4_oa1go"]
+
+[node name="mainMenu" type="Node2D" unique_id=1110803348]
+script = ExtResource("1_8ln24")
+
+[node name="back" type="ColorRect" parent="." unique_id=1483590328]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0.4239784, 0.8093916, 1)
+
+[node name="logo" type="TextureRect" parent="." unique_id=1748412133]
+offset_top = -199.99998
+offset_right = 2000.0
+offset_bottom = 800.0
+scale = Vector2(0.96, 0.96)
+texture = ExtResource("1_wu84c")
+
+[node name="enterButton" type="TextureButton" parent="." unique_id=1517803450]
+offset_left = 660.0
+offset_top = 656.0002
+offset_right = 3660.0
+offset_bottom = 2156.0002
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("2_8ln24")
+texture_pressed = ExtResource("3_rtw2f")
+texture_hover = ExtResource("4_oa1go")
+
+[connection signal="pressed" from="enterButton" to="." method="_on_enter_button_pressed"]
