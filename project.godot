@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="printopia"
-run/main_scene="uid://cgtmn7awfvegf"
+run/main_scene="res://scenes/main_scene.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-global="*uid://balwj1q1i1s4w"
-SaveManager="*uid://b1c744378e2vl"
+global="*res://scripts/global.gd"
+SaveManager="*res://scripts/SaveManager.gd"
 
 [display]
 

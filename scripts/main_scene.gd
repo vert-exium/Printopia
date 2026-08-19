@@ -11,8 +11,6 @@ func _ready():
 	$moneyLabel.text = "Balance: " + str(global.balance)
 
 func _process(delta: float):
-	if not $audioPlayer.playing:
-		$audioPlayer.play()
 	if not timer.is_stopped():
 		var progress_ratio: float = 1.0 - (timer.time_left / timer.wait_time)
 		progress_bar.value = progress_ratio * 100.0
@@ -96,3 +94,7 @@ func loadValues():
 	global.speedLevel = dict["speedLevel"]
 	global.autoPrint = dict["autoPrint"]
 	global.autoPrintCost = dict["autoPrintCost"]
+
+
+func _on_audio_player_finished() -> void:
+	$audioPlayer.play()
