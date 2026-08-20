@@ -272,6 +272,7 @@ text = "Earnings: "
 
 [node name="currentLevel" type="Label" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/earningsUpgrade"]
 layout_mode = 2
+theme_override_constants/outline_size = 5
 text = "Current: $1"
 
 [node name="UpgradeButton" type="Button" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/earningsUpgrade"]
@@ -290,6 +291,7 @@ text = "Print Speed:"
 
 [node name="currentLevel" type="Label" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/speedUpgrade"]
 layout_mode = 2
+theme_override_constants/outline_size = 5
 text = "Current: 1 Second(s)"
 
 [node name="UpgradeButton" type="Button" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/speedUpgrade"]
@@ -308,6 +310,7 @@ text = "Auto Print:"
 
 [node name="currentLevel" type="Label" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/autoPrintUpgrade"]
 layout_mode = 2
+theme_override_constants/outline_size = 5
 text = "Current: None"
 
 [node name="UpgradeButton" type="Button" parent="shopMenu/backTexture/ScrollContainer/VBoxContainer/autoPrintUpgrade"]
@@ -316,17 +319,18 @@ text = "Upgrade ($10000)"
 
 [node name="shopLabelPanel" type="Panel" parent="shopMenu"]
 layout_mode = 0
-offset_left = 96.0
+offset_left = 24.0
 offset_top = 8.0
-offset_right = 416.0
+offset_right = 488.0
 offset_bottom = 48.0
 
 [node name="shopLabel" type="Label" parent="shopMenu/shopLabelPanel"]
 layout_mode = 0
-offset_left = 64.0
+offset_left = 136.0
 offset_top = -4.0
-offset_right = 256.0
+offset_right = 328.0
 offset_bottom = 38.0
+theme_override_constants/outline_size = 5
 theme_override_fonts/font = ExtResource("8_18nlu")
 theme_override_font_sizes/font_size = 32
 text = "Shop"
